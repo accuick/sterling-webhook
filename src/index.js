@@ -24,11 +24,11 @@ app.all("/", (request, response) => {
     if (request.method === "POST") {
         console.log('==========BODY DELTAS START==========');
         console.log(JSON.stringify(request.body));
-        if (request.body.deltas[0].metadata) {
-            for (const key in request.body.deltas[0].metadata) {
-                console.log(key + ": " + request.body.deltas[0].metadata[key])
-            }
-        }
+        // if (request.body.deltas[0].metadata) {
+        //     for (const key in request.body.deltas[0].metadata) {
+        //         console.log(key + ": " + request.body.deltas[0].metadata[key])
+        //     }
+        // }
         console.log('==========BODY DELTAS END==========\n');
     }
 
